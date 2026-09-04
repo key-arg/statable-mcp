@@ -1,0 +1,46 @@
+{
+  "name": "@statable/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Statable, privacy-first cookieless web analytics. Query traffic, sources, pages, goals and funnels from Claude, Cursor, ChatGPT and any MCP client.",
+  "mcpName": "com.statable/analytics",
+  "type": "module",
+  "bin": {
+    "statable-mcp": "bin/statable-mcp.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/statable-mcp.js",
+    "test": "node test/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "analytics",
+    "web-analytics",
+    "privacy",
+    "cookieless",
+    "statable"
+  ],
+  "homepage": "https://statable.com/docs/integrations/mcp/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/key-arg/statable-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/key-arg/statable-mcp/issues"
+  },
+  "author": "Key Arg B.V. <support@statable.com> (https://statable.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}
