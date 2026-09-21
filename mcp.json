@@ -4,11 +4,6 @@
     "statable": {
       "type": "streamable-http",
       "url": "https://mcp.statable.com/mcp"
-    },
-    "statable-stdio": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@statable/mcp"]
     }
   }
 }
