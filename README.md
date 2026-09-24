@@ -50,6 +50,33 @@ claude mcp add statable --scope user -e STATABLE_API_KEY=stbl_your_key -- npx -y
 
 Write tools only touch configuration (sites, goals, funnels, tracking features, filters). Nothing deletes data.
 
+## Agent skills
+
+This repository is also a Claude Code plugin: the hosted MCP server (`.mcp.json`, OAuth) plus three skills.
+
+| Skill | What it does |
+| --- | --- |
+| [statable](skills/statable/SKILL.md) | Audits your codebase or live site, proposes a Measurement Plan (goals, funnels, custom events, properties, tracker features) and, once you approve, implements it in code and in your Statable account, then checks the data arrives. Nothing is written without an explicit yes. |
+| [weekly-traffic-report](skills/weekly-traffic-report/SKILL.md) | A short weekly summary of traffic, sources and goals. |
+| [traffic-drop-check](skills/traffic-drop-check/SKILL.md) | Finds where a traffic drop comes from. |
+
+Claude Code:
+
+```bash
+claude plugin marketplace add key-arg/skills
+claude plugin install statable@statable
+```
+
+The first Statable tool call opens the browser to sign in. To let the agent create goals and funnels, grant "Create and configure your sites" on the consent screen. If you already added the server with `claude mcp add statable ...`, remove it so the tools don't appear twice.
+
+Other agents (skills only; connect the MCP server as above):
+
+```bash
+npx skills add key-arg/statable-mcp
+```
+
+Then ask: *"What should I track on this site?"* or run `/statable:statable`.
+
 ## Configuration
 
 | Setting | Env | Flag | Default |
