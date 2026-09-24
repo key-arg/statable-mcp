@@ -1,0 +1,13 @@
+{
+  "name": "statable",
+  "version": "0.2.0",
+  "description": "Statable, cookieless web analytics hosted in the EU, in your coding agent: the hosted MCP server for traffic, goals, funnels and custom events, plus skills that audit your site or codebase and set up a complete measurement plan, a weekly traffic report and a traffic drop check.",
+  "author": {
+    "name": "Key Arg B.V.",
+    "url": "https://statable.com"
+  },
+  "homepage": "https://statable.com/docs/integrations/mcp/",
+  "repository": "https://github.com/key-arg/statable-mcp",
+  "license": "MIT",
+  "keywords": ["analytics", "web-analytics", "goals", "funnels", "custom-events", "conversion-tracking", "privacy", "cookieless", "gdpr", "mcp"]
+}

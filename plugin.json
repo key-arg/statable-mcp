@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "statable",
-  "version": "0.1.1",
-  "description": "Ask your AI client about website traffic. Statable is cookieless web analytics hosted in the EU: visitors, pages, sources, campaigns, goals, funnels, custom events and live visitors, plus creating and configuring sites, goals and funnels.",
+  "version": "0.2.0",
+  "description": "Ask your AI client about website traffic and set up what to measure. Statable is cookieless web analytics hosted in the EU: visitors, pages, sources, campaigns, goals, funnels, custom events and live visitors, plus a skill that audits your site or codebase and sets up goals, funnels and custom events.",
   "author": {
     "name": "Key Arg B.V.",
     "url": "https://statable.com"
