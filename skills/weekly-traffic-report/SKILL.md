@@ -1,6 +1,11 @@
 ---
 name: weekly-traffic-report
-description: Builds a weekly traffic report for a site tracked with Statable: visitors and pageviews against the previous week, where the traffic came from, which pages carried it, which goals converted and how engaged people were. Use when someone asks how a website did last week, wants a Monday summary, or asks what changed in traffic since the previous period.
+description: >
+  Builds a weekly traffic report for a site tracked with Statable: visitors and
+  pageviews against the previous week, where the traffic came from, which pages
+  carried it, which goals converted and how engaged people were. Use when
+  someone asks how a website did last week, wants a Monday summary, or asks what
+  changed in traffic since the previous period.
 license: MIT
 metadata:
   author: Key Arg B.V.
