@@ -1,0 +1,10 @@
+{
+  "name": "statable",
+  "version": "0.2.0",
+  "description": "Statable, cookieless web analytics hosted in the EU: the hosted MCP server for traffic, goals, funnels and custom events, plus skills that audit a site or codebase and set up a measurement plan, a weekly traffic report and a traffic drop check.",
+  "mcpServers": {
+    "statable": {
+      "httpUrl": "https://mcp.statable.com/mcp"
+    }
+  }
+}

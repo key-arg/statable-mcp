@@ -69,6 +69,12 @@ claude plugin install statable@statable
 
 The first Statable tool call opens the browser to sign in. To let the agent create goals and funnels, grant "Create and configure your sites" on the consent screen. If you already added the server with `claude mcp add statable ...`, remove it so the tools don't appear twice.
 
+Gemini CLI (MCP server and skills, via `gemini-extension.json`):
+
+```bash
+gemini extensions install https://github.com/key-arg/statable-mcp
+```
+
 Other agents (skills only; connect the MCP server as above):
 
 ```bash
